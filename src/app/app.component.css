@@ -1,0 +1,17 @@
+.app-container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-title {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}

@@ -1,17 +1,80 @@
 .app-container {
-  text-align: center;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-title {
-  font-size: 48px;
   color: #007bff;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .subtitle {
-  font-size: 18px;
+  text-align: center;
   color: #6c757d;
   margin-bottom: 30px;
+}
+
+.cats-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cat-item {
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cat-item:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.3s;
+}
+
+.date-container {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.date-container p {
+  margin: 8px 0;
+}
+
+.switch-container {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.switch-container p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pipe-container {
+  background-color: #d4edda;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #c3e6cb;
+}
+
+.pipe-container p {
+  margin: 8px 0;
+}
+
+h2 {
+  color: #343a40;
+  margin-top: 25px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
 }

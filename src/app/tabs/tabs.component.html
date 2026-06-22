@@ -1,0 +1,11 @@
+<div class="tabs-container">
+  <h2>Пример Tabs из Angular Material</h2>
+  
+  <mat-tab-group>
+    <mat-tab *ngFor="let tab of tabs" [label]="tab.label">
+      <div class="tab-content">
+        <p>{{ tab.content }}</p>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

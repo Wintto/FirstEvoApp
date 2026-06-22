@@ -1,0 +1,8 @@
+<div class="item-container">
+  <h2>Список товаров</h2>
+  <ul>
+    <li *ngFor="let item of items">
+      <strong>{{ item.name }}</strong> - {{ item.price }} ₽
+    </li>
+  </ul>
+</div>

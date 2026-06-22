@@ -1,15 +1,11 @@
 <div class="app-container">
-  <h1>Мое Angular приложение</h1>
+  <h1>{{ title }}</h1>
   
-  <!-- Навигация -->
-  <nav class="navigation">
+  <nav>
     <a routerLink="/">Главная</a>
-    <a routerLink="/contact">Контакты</a>
-    <a routerLink="/about">О компании</a>
-    <a routerLink="/item/1">Товар 1</a>
-    <a routerLink="/item/2">Товар 2</a>
+    <a routerLink="/items">Товары (LazyLoad)</a>
+    <a routerLink="/tabs">Tabs</a>
   </nav>
 
-  <!-- Отображение компонентов -->
   <router-outlet></router-outlet>
 </div>

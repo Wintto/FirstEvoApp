@@ -1,10 +1,6 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
-import { ItemComponent } from './item/item.component';
-import { ItemDetailsComponent } from './item-details/item-details.component';
-import { ItemListComponent } from './item-list/item-list.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 export const routes: Routes = [
   {
@@ -12,26 +8,12 @@ export const routes: Routes = [
     component: MainComponent
   },
   {
-    path: 'contact',
-    component: ContactComponent
+    path: 'items',
+    loadChildren: () => import('./page/page.module').then(m => m.PageModule)
   },
   {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'item/:id',
-    component: ItemComponent,
-    children: [
-      {
-        path: 'details',
-        component: ItemDetailsComponent
-      },
-      {
-        path: 'list',
-        component: ItemListComponent
-      }
-    ]
+    path: 'tabs',
+    component: TabsComponent
   },
   {
     path: '**',

@@ -1,0 +1,16 @@
+.item-container {
+  padding: 20px;
+}
+
+.item-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item-container li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}

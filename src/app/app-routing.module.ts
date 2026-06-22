@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
@@ -6,7 +7,7 @@ import { ItemComponent } from './item/item.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { ItemListComponent } from './item-list/item-list.component';
 
-export const routes: Routes = [
+const routes: Routes = [
   {
     path: '',
     component: MainComponent
@@ -39,3 +40,9 @@ export const routes: Routes = [
     pathMatch: 'full'
   }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

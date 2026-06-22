@@ -1,36 +1,15 @@
 <div class="app-container">
-  <h1 class="main-title">{{ title }}</h1>
-  <p class="subtitle">Добро пожаловать в мое первое Angular приложение!</p>
+  <h1>Мое Angular приложение</h1>
   
-  <h2> Список котов (с помощью *ngFor)</h2>
-  <ul class="cats-list">
-    <li *ngFor="let cat of arrayCats; index as i" class="cat-item">
-      {{ i + 1 }}. {{ cat.name }}
-    </li>
-  </ul>
+  <!-- Навигация -->
+  <nav class="navigation">
+    <a routerLink="/">Главная</a>
+    <a routerLink="/contact">Контакты</a>
+    <a routerLink="/about">О компании</a>
+    <a routerLink="/item/1">Товар 1</a>
+    <a routerLink="/item/2">Товар 2</a>
+  </nav>
 
-  <h2>Текущая дата</h2>
-  <div class="date-container">
-    <p><strong>Без форматирования:</strong> {{ currentDate }}</p>
-    <p><strong>С форматированием (DD/MM/YYYY):</strong> {{ currentDate | date:'dd/MM/yyyy' }}</p>
-    <p><strong>С форматированием (полный формат):</strong> {{ currentDate | date:'dd MMMM yyyy, HH:mm' }}</p>
-  </div>
-
-  <h2>ngSwitch пример</h2>
-  <div [ngSwitch]="switchString" class="switch-container">
-    <p *ngSwitchCase="'Car'"> Вы выбрали: Автомобиль</p>
-    <p *ngSwitchCase="'Bike'"> Вы выбрали: Велосипед</p>
-    <p *ngSwitchCase="'Plane'"> Вы выбрали: Самолет</p>
-    <p *ngSwitchDefault> Ничего не выбрано</p>
-  </div>
-
-  <h2>Свой Pipe: прибавление 5</h2>
-  <div class="pipe-container">
-    <p><strong>Исходное число:</strong> 10</p>
-    <p><strong>Результат (с AddFivePipe):</strong> {{ 10 | addFive }}</p>
-    <p><strong>Исходное число:</strong> 7</p>
-    <p><strong>Результат (с AddFivePipe):</strong> {{ 7 | addFive }}</p>
-  </div>
-
-  <app-counter></app-counter>
+  <!-- Отображение компонентов -->
+  <router-outlet></router-outlet>
 </div>

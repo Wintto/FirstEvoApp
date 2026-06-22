@@ -1,0 +1,22 @@
+<div class="list-container">
+  <h3>Список товара #{{ itemId }}</h3>
+  
+  <div class="params-info">
+    <p><strong>Параметры запроса:</strong></p>
+    <ul>
+      <li><strong>list:</strong> {{ listParam || 'не указан' }}</li>
+      <li><strong>enable:</strong> {{ enableParam || 'не указан' }}</li>
+    </ul>
+  </div>
+
+  <button (click)="updateQueryParams()" class="update-btn">
+    Обновить параметры (list=1&enable=true)
+  </button>
+
+  <div class="list-items">
+    <h4>Список элементов:</h4>
+    <ul>
+      <li *ngFor="let item of getItems()">Элемент {{ item }}</li>
+    </ul>
+  </div>
+</div>

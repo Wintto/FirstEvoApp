@@ -1,0 +1,27 @@
+<div class="book-container">
+  <h2>Информация о книге</h2>
+  
+  <div class="book-card">
+    <div class="book-field">
+      <strong>Post ID:</strong> {{ book.postId }}
+    </div>
+    <div class="book-field">
+      <strong>ID:</strong> {{ book.id }}
+    </div>
+    <div class="book-field">
+      <strong>Название:</strong> {{ book.name }}
+    </div>
+    <div class="book-field">
+      <strong>Email:</strong> {{ book.email }}
+    </div>
+    <div class="book-field">
+      <strong>Описание:</strong>
+      <p class="book-body">{{ book.body }}</p>
+    </div>
+  </div>
+
+  <div class="json-output">
+    <h3>Данные в формате JSON:</h3>
+    <pre>{{ book | json }}</pre>
+  </div>
+</div>
